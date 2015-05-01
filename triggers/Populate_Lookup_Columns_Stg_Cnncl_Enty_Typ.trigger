@@ -1,0 +1,1 @@
+trigger Populate_Lookup_Columns_Stg_Cnncl_Enty_Typ on Stg_Cnncl_Enty_Typ_gne__c (before insert, before update) {GNE_Subscribe_Utility.populateLookupRefColumn(Trigger.new);}

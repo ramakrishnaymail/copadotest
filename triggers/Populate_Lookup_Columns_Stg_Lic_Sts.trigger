@@ -1,0 +1,1 @@
+trigger Populate_Lookup_Columns_Stg_Lic_Sts on Stg_Lic_Sts_gne__c (before insert, before update) {GNE_Subscribe_Utility.populateLookupRefColumn(Trigger.new);}

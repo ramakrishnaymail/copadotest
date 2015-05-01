@@ -1,0 +1,1 @@
+trigger Populate_Lookup_Columns_Stg_Pty_Profsnl_Sufx on Stg_Pty_Profsnl_Sufx_gne__c (before insert, before update) {GNE_Subscribe_Utility.populateLookupRefColumn(Trigger.new);}

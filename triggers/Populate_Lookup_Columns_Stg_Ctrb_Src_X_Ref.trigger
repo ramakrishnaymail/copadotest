@@ -1,0 +1,1 @@
+trigger Populate_Lookup_Columns_Stg_Ctrb_Src_X_Ref on Stg_Ctrb_Src_X_Ref_gne__c (before insert, before update) {GNE_Subscribe_Utility.populateLookupRefColumn(Trigger.new);}

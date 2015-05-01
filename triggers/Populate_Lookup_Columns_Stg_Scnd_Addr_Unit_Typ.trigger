@@ -1,0 +1,1 @@
+trigger Populate_Lookup_Columns_Stg_Scnd_Addr_Unit_Typ on Stg_Scnd_Addr_Unit_Typ_gne__c (before insert, before update) {GNE_Subscribe_Utility.populateLookupRefColumn(Trigger.new);}

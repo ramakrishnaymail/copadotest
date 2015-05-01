@@ -1,0 +1,1 @@
+trigger Populate_Lookup_Columns_Stg_Indv_Edu on Stg_Indv_Edu_gne__c (before insert, before update) {GNE_Subscribe_Utility.populateLookupRefColumn(Trigger.new);}
